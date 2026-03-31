@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        video {
+            width: 80%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        form {
+            background: white;
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align: left;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to Student Portal</h1>
+
+    <!-- 🔹 Video Section -->
+    <video autoplay muted loop controls>
+        <source src="videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 🔹 Student Form -->
+    <form>
+        <h2>Student Registration Form</h2>
+
+        <label>Full Name:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" required>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> others
+        <br><br>
+
+        <label>Course:</label>
+        <select>
+            <option disabled selected>Course</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>ReactJS</option>
+        </select>
+
+        <label>Address:</label>
+        <input type="text" required>
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
